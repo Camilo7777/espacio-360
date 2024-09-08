@@ -1,0 +1,78 @@
+/* Asegúrate de que el fondo sea negro */
+.container {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Color del texto para asegurar contraste */
+  text-align: center; /* Centra el texto */
+  padding: 40px 20px; /* Espaciado del contenedor */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.image-banner {
+  position: relative;
+  max-width: 50%;
+  height: auto;
+  margin: 0px 0;
+  overflow: hidden;
+}
+
+.image-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-banner img:hover {
+  transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre tarjetas */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+}
+
+.image-card {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente para las tarjetas */
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  color: #fff; /* Color del texto dentro de las tarjetas */
+}
+
+.image-card:hover {
+  transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+.image-card img {
+  width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+  height: 200px; /* Ajusta la altura de la imagen */
+  object-fit: cover; /* Mantiene la imagen en proporción */
+}
+
+.image-info {
+  padding: 15px;
+}
+
+.image-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffeb3b; /* Color del título para resaltar */
+}
+
+.image-info p {
+  margin: 10px 0 0;
+  color: #ddd; /* Color del texto */
+}
